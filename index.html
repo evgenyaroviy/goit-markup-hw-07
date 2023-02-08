@@ -19,6 +19,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
@@ -32,17 +34,19 @@
             <span class="logo-name">Web</span>Studio</a
           >
 
-          <ul class="site-nav">
-            <li class="nav-list">
-              <a href="./index.html" class="header-link current">Studio</a>
-            </li>
-            <li class="nav-list">
-              <a href="./portfolio.html" class="header-link">Portfolio</a>
-            </li>
-            <li class="nav-list">
-              <a href="" class="header-link">Contacts</a>
-            </li>
-          </ul>
+          <div class="header-nav">
+            <ul class="site-nav">
+              <li class="nav-list">
+                <a href="./index.html" class="header-link current">Studio</a>
+              </li>
+              <li class="nav-list">
+                <a href="./portfolio.html" class="header-link">Portfolio</a>
+              </li>
+              <li class="nav-list">
+                <a href="" class="header-link">Contacts</a>
+              </li>
+            </ul>
+          </div>
         </nav>
 
         <!-- Info -->
@@ -227,7 +231,7 @@
 
       <!-- What are we doing -->
 
-      <section class="section">
+      <section class="section example">
         <div class="container">
           <h2 class="work">What are we doing</h2>
           <ul class="work-list">
@@ -488,60 +492,64 @@
 
     <footer class="footer">
       <div class="container">
-        <div class="footer-item">
-          <a href="./index.html" class="footer-logo"
-            ><span class="logo-name">Web</span>Studio</a
-          >
-          <p class="footer-text">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
-          </p>
-        </div>
+        <div class="footer-tablet">
+          <div class="footer-item">
+            <a href="./index.html" class="footer-logo"
+              ><span class="logo-name">Web</span>Studio</a
+            >
+            <p class="footer-text">
+              Increase the flow of customers and sales for your business with
+              digital marketing & growth solutions.
+            </p>
+          </div>
 
-        <div class="footer-social">
-          <h2 class="footer-social-name">Social media</h2>
-          <ul class="footer-social-nav">
-            <li class="footer-social-list">
-              <a class="footer-social-link" href="/">
-                <svg class="footer-social-icon" width="16" height="16">
-                  <use href="./images/icons.svg#icon-insta"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-list">
-              <a class="footer-social-link" href="/"
-                ><svg class="footer-social-icon" width="16" height="16">
-                  <use href="./images/icons.svg#icon-twitter-1"></use></svg
-              ></a>
-            </li>
-            <li class="footer-social-list">
-              <a class="footer-social-link" href="/"
-                ><svg class="footer-social-icon" width="16" height="16">
-                  <use href="./images/icons.svg#icon-facebook-1"></use></svg
-              ></a>
-            </li>
-            <li class="footer-social-list">
-              <a class="footer-social-link" href="/"
-                ><svg class="footer-social-icon" width="16" height="16">
-                  <use href="./images/icons.svg#icon-linkedin-1"></use></svg
-              ></a>
-            </li>
-          </ul>
+          <div class="footer-social">
+            <h2 class="footer-social-name">Social media</h2>
+            <ul class="footer-social-nav">
+              <li class="footer-social-list">
+                <a class="footer-social-link" href="/">
+                  <svg class="footer-social-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-insta"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-list">
+                <a class="footer-social-link" href="/"
+                  ><svg class="footer-social-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-twitter-1"></use></svg
+                ></a>
+              </li>
+              <li class="footer-social-list">
+                <a class="footer-social-link" href="/"
+                  ><svg class="footer-social-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-facebook-1"></use></svg
+                ></a>
+              </li>
+              <li class="footer-social-list">
+                <a class="footer-social-link" href="/"
+                  ><svg class="footer-social-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <form>
           <div class="subscribe">
             <h2 class="footer-social-name">Subscribe</h2>
-            <label class="footer-subscribe">
-              <input type="email" class="footer-mail" placeholder="E-mail" />
-            </label>
+            <div class="subscribe-tablet">
+              <label class="footer-subscribe">
+                <input type="email" class="footer-mail" placeholder="E-mail" />
+              </label>
 
-            <button type="submit" class="button-subscribe">
-              Subscribe
-              <svg class="sudscribe-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-sudscribe"></use>
-              </svg>
-            </button>
+              <button type="submit" class="button-subscribe">
+                Subscribe
+                <svg class="sudscribe-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-sudscribe"></use>
+                </svg>
+              </button>
+            </div>
           </div>
         </form>
       </div>
