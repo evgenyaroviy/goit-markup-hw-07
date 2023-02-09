@@ -1,4 +1,10 @@
 @media screen and (min-width: 1px) and (max-width: 767px) {
+
+.section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
   /* ------------------------header------------------------ */
 
   .page-header > .container {

@@ -1,14 +1,14 @@
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .section {
-    padding-top: 96px;
-    padding-bottom: 96px;
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 
   /* ------------------------header------------------------ */
 
   .page-header > .container {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -17,7 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 123px;
+    gap: 76px;
   }
 
   .header-nav {
@@ -30,7 +30,9 @@
   }
 
   .auth-nav {
-    display: block;
+    display: flex;
+    justify-content: end;
+    gap: 40px;
   }
 
   .logo {
@@ -55,98 +57,92 @@
   /* ------------------------hero------------------------ */
 
   .hero {
-    padding-top: 112px;
-    padding-bottom: 108px;
+    width: 1158px;
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 
   .hero-title {
-    font-size: 36px;
-    line-height: calc(40 / 36);
-    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: calc(60 / 56);
+    margin-bottom: 48px;
   }
 
   /* ------------------------ order ------------------------ */
 
   .order-list {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    column-gap: 24px;
-  }
-
-  .list:nth-child(-n + 2) {
-    margin-bottom: 72px;
+    gap: 24px;
   }
 
   .order-list > li {
-    flex-basis: calc((100% - 24px) / 2);
+    flex-basis: calc((100% - 24px * 3) / 4);
   }
 
   .list-svg {
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   /* ------------------------ What are we doing ------------------------ */
 
   .example {
-    display: none;
+    display: flex;
+    padding-top: 0;
   }
 
   /* ------------------------ Our Team ------------------------ */
   .team-list {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-
-    column-gap: 24px;
-  }
-
-  .team-list > .team-item {
-    margin: 0;
-  }
-
-  .team-item:nth-child(-n + 2) {
-    margin-bottom: 72px;
-  }
-
-  .section-team {
-    padding-top: 96px;
-    padding-bottom: 104px;
+    gap: 24px;
   }
 
   /* ------------------------ customers ------------------------ */
 
   .customers-item {
-    width: calc((100% - 24px * 2) / 3);
+    width: calc((100% - 24px * 5) / 6);
     height: 88px;
   }
 
-  .customers-item:nth-child(-n + 3) {
+  /* .customers-item:nth-child(-n + 3) {
     margin-bottom: 72px;
-  }
+  } */
 
   /* ------------------------ footer ------------------------ */
 
+  .footer > .container {
+    display: flex;
+    align-items: baseline;
+    justify-content: start;
+  }
+
   .footer {
-    padding-top: 96px;
-    padding-bottom: 96px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   .footer-tablet {
     display: flex;
-    justify-content: baseline;
-    gap: 24px;
-  }
-
-  .footer-social {
-    margin-bottom: 72px;
+    gap: 120px;
   }
 
   .footer-social-nav {
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 24px;
     list-style: none;
+  }
+
+  .footer-social {
+    margin-right: 80px;
+  }
+
+  .footer-tablet > .footer-item {
+    margin-bottom: 0;
   }
 
   .subscribe {
@@ -170,9 +166,9 @@
     margin-bottom: 0;
   }
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 1200px) {
     .container {
-      max-width: 768px;
+      max-width: 1158px;
     }
   }
 }
