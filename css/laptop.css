@@ -254,6 +254,10 @@
     padding-bottom: 120px;
   }
 
+  .portfolio-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
   .portfolio-nav {
     display: flex;
     gap: 24px;
