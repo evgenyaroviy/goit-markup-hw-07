@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .section {
     padding-top: 96px;
     padding-bottom: 96px;
@@ -83,6 +83,18 @@
   .hero {
     padding-top: 112px;
     padding-bottom: 108px;
+
+    background-image: var(--grad),
+      url(../images/img-1x/tablet-img/dark-bg-tab.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: var(--grad),
+        url(../images/img-2x/tablet-img-2x/dark-bg-tab-2x.jpg);
+    }
   }
 
   .hero-title {
@@ -98,6 +110,10 @@
     flex-wrap: wrap;
     justify-content: center;
     column-gap: 24px;
+  }
+
+  .list:not(:last-child) {
+    margin-bottom: 0;
   }
 
   .order-list > .list:nth-child(-n + 2) {
@@ -138,9 +154,17 @@
 
   /* ------------------------ customers ------------------------ */
 
+  .customers-content > .container {
+    width: 582px;
+  }
+
   .customers-item {
     width: calc((100% - 24px * 2) / 3);
     height: 88px;
+  }
+
+  .customers-item:nth-child(-n + 4) {
+    margin-bottom: 0;
   }
 
   .customers-item:nth-child(-n + 3) {
@@ -155,7 +179,7 @@
   }
 
   .footer .container {
-    padding-left: 108px;
+    width: 582px;
   }
 
   .footer-tablet {
@@ -173,6 +197,11 @@
     justify-content: center;
     gap: 16px;
     list-style: none;
+  }
+
+  .footer-social-name,
+  .footer-logo {
+    text-align: inherit;
   }
 
   .subscribe {
