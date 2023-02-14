@@ -254,6 +254,10 @@
     padding-bottom: 120px;
   }
 
+  .portfolio-content {
+    box-shadow: none;
+  }
+
   .portfolio-item:not(:last-child) {
     margin-bottom: 0;
   }
