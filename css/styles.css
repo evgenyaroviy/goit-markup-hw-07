@@ -574,7 +574,7 @@ li {
 }
 
 .feedback-info {
-  width: 360px;
+  width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
