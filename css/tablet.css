@@ -112,6 +112,10 @@
     column-gap: 24px;
   }
 
+  .order-title {
+    text-align: inherit;
+  }
+
   .list:not(:last-child) {
     margin-bottom: 0;
   }
